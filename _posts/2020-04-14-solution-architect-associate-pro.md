@@ -11,17 +11,30 @@ show_image_post: false                                    # Change this to true
 ---
 
 
-## Download me on GitHub
+## A.1-Definition
 
-Feel free to download and use this writeup template for Hack the Box machines for your own writeups.  Please let me where you post them so I can check them out and see how you completed the machines!  If you have any contributions to my site, feel free to leave an issue and pull request!
+**AWS CloudFront** is a **content delivery network** who improve the delivery of content from it's original location to the viewer of that data **by caching** and using AWS global networkµ
 
-Fork this on [Zweilosec's GitHub](https://github.com/zweilosec)!
+## A.2-Some Keys Terms
 
-## HTB - Machine_Name
+|    |      |
+|:--------------- |:--------  |
+| `Origin`        |  Source location of your content (S3 or custom origin). For one CloudFornt configuration, <br>we can have **one or more origin**it  |
+| `Edge Location`  | Local cache of your data(not to deploy an EC2 instance) |
+| `Distribution`  | Configuration unit of CloudFront. A **distribution** can have many **behavior** which aere configured with a path pattern. If request match that pattern, that behavior is used otherwise the default. |
+| `Edge Location`  | Local cache of your data(not to deploy an EC2 instance) |
+| `Regional Edge Cache`  | Larger version of an **Edge location** and support a number of **edge location** in the same geographical location. |
+|   | Only use **regional edge cache** if the content origin is not S3. |
+| `Cache hit`  | Delivering object from the closest **edge location** with low latency. **Edge location** might check it's closest **regional cache**. |
+| `Cache miss`  | Delivering object that is not in the closest **edge location**. |
+| `Cache behavior`  | Locaye between **origin** and **distribution**. |
 
-## Overview
+The are two important architectural things to note here:
 
-![Descriptive information card about this machine](<machine>-0-infocard.png)
+* **AWS CloudFront** is integrates whith **AWS Certificate Manager ACM**, so you can use **SSL Certificates** with **CloudFront**
+
+* **CloudFront** is for download-style operations only. **Any upload goes direct to the origin for processing**.
+  > **CloudFront perform no write caching**
 
 Short description to include any strange things to be dealt with
 
