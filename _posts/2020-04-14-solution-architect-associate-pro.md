@@ -11,6 +11,7 @@ show_image_post: false                                    # Change this to true
 mathjax: true
 mathjax_autoNumber: true
 usemathjax: true
+img_path: /assets/img/
 ---
 
 
@@ -93,43 +94,7 @@ When you are establishing the encrypted connection between your device and [amaz
 
 | AttributeName   | key     |
 |:--------------- |:--------  |
-| ${\color{blue}docker \space rename}$        | Creates a container but does not start it     |
-
-C:\Users\thier\OneDrive\Documents\GitHub\oliana2\assets\img\others
-
-## Initial Foothold
-
-## Road to User
-
-### Further enumeration
-
-### Finding user creds
-
-### User.txt
-
-## Path to Power \(Gaining Administrator Access\)
-
-### Enumeration as user `username`
-
-### Getting a shell
-
-### Root.txt
-
-Thanks to [`<box_creator>`](https://www.hackthebox.eu/home/users/profile/<profile_num>) for something interesting or useful about this machine.
-
-If you have comments, issues, or other feedback, or have any other fun or useful tips or tricks to share, feel free to contact me on Github at [https://github.com/zweilosec](https://github.com/zweilosec) or in the comments below!
+| <img src="https://user-images.githubusercontent.com/14333637/216757347-695ff98c-6928-4626-9c7b-a61214f4cd40.png" alt="drawing" width="35"/>| For using `HTTPS`, **you need to have the appropiate certificate**. <br> The certificate need to **match the CloudFront distribution name<br> either in viewer or origin protocol**
 
 If you like this content and would like to see more, please consider buying me a coffee! <a href="https://www.buymeacoffee.com/zweilosec"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=zweilosec&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff"></a>
 
-
-
-Given an gray-scale image:
-
-$$ \begin{bmatrix}
-    3 & 0 & 1 & 2 & 7 & 4 \\
-    1 & 5 & 8 & 9 & 3 & 1 \\
-    2 & 7 & 2 & 5 & 1 & 3 \\
-    0 & 1 & 3 & 1 & 7 & 8 \\
-    4 & 2 & 1 & 6 & 2 & 8 \\
-    2 & 4 & 5 & 2 & 3 & 9 \\
-\end{bmatrix} $$
