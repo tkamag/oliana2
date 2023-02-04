@@ -10,6 +10,7 @@ show_image_post: false                                    # Change this to true
 #image: /assets/img/machine-0-infocard.png                # Add infocard image here for post preview image
 mathjax: true
 mathjax_autoNumber: true
+usemathjax: true
 ---
 
 
