@@ -5,7 +5,7 @@ description: >-
 title: CloudFront                   # Add title of the machine here
 date: 2023-02-02 08:00:00 -0600     # Change the date to match completion date
 categories: [AWS Certification Cheatsheet, AWS Certified Solutions Architect – Professional]    # Change Templates to Writeup
-tags: [AWS, Certification, CloudFront, template]     # TAG names should always be lowercase; replace template with writeup, and add relevant tags
+tags: [AWS, Certification, CloudFront, Distribution, SSL, TLS, Edge Location, Certificate]     # TAG names should always be lowercase; replace template with writeup, and add relevant tags
 show_image_post: false                               # Change this to true
 #image: /assets/img/machine-0-infocard.png           # Add infocard image here for post preview image
 mathjax: true
@@ -30,7 +30,7 @@ img_path: /assets/img/
 | `Regional Edge Cache`  | Larger version of an **Edge location** and support a number of **edge <br> location** in the same  geographical location.  <br>  Only use **regional edge cache** if the content origin is not S3.|
 | `Cache hit`  | Delivering object from the closest **edge location** with low latency. <br>**Edge location** might  check it's closest **regional cache**. |
 | `Cache miss`  | Delivering object that is not in the closest **edge location**. |
-| `Cache behavior`  | Locaye between **origin** and **distribution**. |
+| `Cache behavior`  | Locate between **origin** and **distribution**. |
 | `Trusted signers`  | Accounts that are generally able to generate **signed URL** or **signed <br>cookies**. (refer to a  restrictb access to a behavior  nd to the content <br> deliver by that behavior).  <br> We can aqociate a **lambda@edge** function at the behavior level. |
 | `Price Class`  | Determine which **edge locations** your distribution is deployed to. |
 
@@ -200,5 +200,17 @@ So:
 2. Location restrictions **which go beyond just the country i.e states or latitude and longitude components** =====> **Third-party Geolocation** architecture
 
 3. If it's **just country or country code** =====> **Built-in `Cloudfront Geo restriction feature set`**
+
+> Example line for prompt info.
+{: .prompt-info }
+
+> Example line for prompt tip.
+{: .prompt-tip }
+
+> Example line for prompt warning.
+{: .prompt-warning }
+
+> Example line for prompt danger.
+{: .prompt-danger }
 
 If you like this content and would like to see more, please consider buying me a coffee! <a href="https://www.buymeacoffee.com/thierrykama" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
